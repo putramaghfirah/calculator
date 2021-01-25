@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 220px;
+    margin: auto;
+}
+
+.info {
+    height: 40px;
+    border: 1px solid black;
+}
+
+button {
+    display: inline-block;
+    width: 50px;
+    background-color: rgba(0, 0, 0, .3);
+    height: 50px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.equal {
+    height: 105px;
+}
+
+.zero {
+    width: 105px;
+}
+
+table td {
+    text-align: center;
+}
