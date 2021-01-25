@@ -79,8 +79,12 @@ function calculate(firstNumber, secondNumber, operator) {
 buttons.forEach((button) => {
   if (button.classList.contains('operator')) {
     button.addEventListener('click', function () {
-      inputOperator(button.value);
-      display();
+      if (calculator.displayNumber === '0' || calculator.displayNumber === '') {
+        display();
+      } else {
+        inputOperator(button.value);
+        display();
+      }
     });
   } else if (button.classList.contains('clear')) {
     button.addEventListener('click', function () {
